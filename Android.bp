@@ -216,6 +216,13 @@ cc_defaults {
         "liblz4",
         "libziparchive",
     ],
+    product_variables: {
+        debuggable: {
+            cflags: [
+                "-DRUN_BACKUPTOOL",
+            ],
+        },
+    },
 }
 
 cc_defaults {
